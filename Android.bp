@@ -1,0 +1,17 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libqcbor_static",
+    vendor: true,
+    srcs: [
+        "src/UsefulBuf.c",
+        "src/ieee754.c",
+        "src/qcbor_decode.c",
+        "src/qcbor_encode.c",
+        "src/qcbor_err_to_str.c",
+    ],
+    export_include_dirs: ["inc"],
+}
